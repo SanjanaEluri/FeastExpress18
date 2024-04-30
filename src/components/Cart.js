@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-
+import config from '../config'
 export default function Cart() {
   const [orderedItems, setOrderedItems] = useState([]);
   const [error, setError] = useState('');
@@ -14,7 +14,7 @@ export default function Cart() {
   useEffect(() => {
     const fetchOrderedItems = async () => {
       try {
-        const response = await axios.get(`http://localhost:2001/ordereditem/${orderedItems.email}`);
+        const response = await axios.get(`${config.url}/${orderedItems.email}`);
         setOrderedItems(response.data);
       } catch (error) {
         setError(error.message);

@@ -1,7 +1,7 @@
 // Ordereditems.js
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-
+import config from '../config'
 export default function Ordereditems() {
   const [sellerData, setSellerData] = useState("");
   const [orderedItems, setOrderedItems] = useState([]);
@@ -27,7 +27,7 @@ export default function Ordereditems() {
         return; // Exit if sellerData or itemname is missing
       }
   
-      const response = await axios.get(`http://localhost:2001/ordereditem/${sellerData.itemname}`);
+      const response = await axios.get(`${config.url}/${sellerData.itemname}`);
       setOrderedItems(response.data);
     } catch (error) {
       setError(error.message);

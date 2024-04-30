@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-
+import config from './Sellerprofile/configure'
 export default function Viewmenu() {
   const [jobseekers, setJobSeekers] = useState([]);
 
   const fetchJobSeekers = async () => {
     try {
-      const response = await axios.get('http://localhost:2001/viewmenu');
+      const response = await axios.get(`${config.url}/viewmenu`);
       setJobSeekers(response.data);
     } catch (error) {
       console.error(error.message);
@@ -17,7 +17,7 @@ export default function Viewmenu() {
     try {
       console.log('Deleting item with Name:', name);
   
-      const response = await axios.delete(`http://localhost:2001/deletemenu/${name}`);
+      const response = await axios.delete(`${config.url}/deletemenu/${name}`);
       
       console.log('Delete response:', response.data);
   

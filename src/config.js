@@ -1,4 +1,4 @@
 const config = {
-    url:'http://localhost:2001'
+    url:'https://backendapp-6bd2.onrender.com'
 };
 export default config;

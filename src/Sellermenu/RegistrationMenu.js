@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import './RegistrationMenu.css';
-
+import config from './Sellerprofile/configure'
 export default function Registration() {
   const [formData, setFormData] = useState({
     itemname: '',
@@ -48,7 +48,7 @@ export default function Registration() {
       formDataToSend.append('image', formData.image);
       
 
-      const response = await axios.post('http://localhost:2001/insertmenu', formDataToSend);
+      const response = await axios.post(`${config.url}/insertmenu`, formDataToSend);
 
       if (response.status === 200) {
         setFormData({ // Clear itemid and reset other fields on success

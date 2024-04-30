@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './admin.css'
-
+import config from '../config'
 export default function Viewsellers() {
   const [jobseekers, setJobSeekers] = useState([]);
 
   const fetchJobSeekers = async () => {
     try {
-      const response = await axios.get('http://localhost:2001/viewallprofile');
+      const response = await axios.get(`${config.url}/viewallprofile`);
       setJobSeekers(response.data);
     } catch (error) {
       console.error(error.message);

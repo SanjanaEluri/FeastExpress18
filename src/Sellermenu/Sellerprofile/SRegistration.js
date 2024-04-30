@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import axios from 'axios';
-
+import config from './configure'
 
 
 export default function SRegistration() 
@@ -37,7 +37,7 @@ export default function SRegistration()
     e.preventDefault();
     try 
     {
-      const response = await axios.post('http://localhost:2001/insertseller', formData);
+      const response = await axios.post(`${config.url}/insertseller`, formData);
       if (response.status === 200) 
       {
         //It will set all fields to ""

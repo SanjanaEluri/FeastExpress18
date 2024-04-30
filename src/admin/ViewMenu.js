@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-
+import config from '../config'
 
 export default function ViewMenu() {
   const [jobseekers, setJobSeekers] = useState([]);
 
   const fetchJobSeekers = async () => {
     try {
-      const response = await axios.get('http://localhost:2001/viewmenu');
+      const response = await axios.get(`${config.url}/viewmenu`);
       setJobSeekers(response.data);
     } catch (error) {
       console.error(error.message);

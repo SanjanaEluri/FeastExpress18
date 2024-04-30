@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import './signin.css'
+import config from '../config'
 // import transparentVideo from '../Images/pexels_videos_2832316 (1080p).mp4';
 // import config from '../config';
 export default function Signin() 
@@ -37,7 +38,7 @@ export default function Signin()
     e.preventDefault();
     try 
     {
-      const response = await axios.post('http://localhost:2001/insertcustomer', formData);
+      const response = await axios.post(`${config.url}/insertcustomer`, formData);
       if (response.status === 200) 
       {
         //It will set all fields to ""

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-
+import config from '../config'
 export default function Shakes() {
   const [items, setItems] = useState([]);
   const [message, setMessage] = useState('');
@@ -8,7 +8,7 @@ export default function Shakes() {
 
   const fetchItems = async () => {
     try {
-      const response = await axios.get('http://localhost:2001/viewmenu');
+      const response = await axios.get(`${config.url}/viewmenu`);
       const filteredItems = response.data.filter(item => item.category === 'Shakes');
       setItems(filteredItems);
     } catch (error) {

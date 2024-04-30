@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import '../Scomponents/SellersNavBar'
-
+import config from './configure.js'
 
 export default function Slogin({onSellerLogin}) {
   const [formData, setFormData] = useState({
@@ -23,7 +23,7 @@ export default function Slogin({onSellerLogin}) {
     e.preventDefault();
     try {
       const response = await axios.post(
-        'http://localhost:2001/checksellerlogin',
+        `${config.url}/checksellerlogin`,
         formData
       );
       console.log('Login Response:', response.data);
