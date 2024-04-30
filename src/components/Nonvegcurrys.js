@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { Modal } from 'react-bootstrap';
-import { Link, useNavigate } from 'react-router-dom';
-import config from '../config';
+
+
 export default function Nonvegcurrys({ Nonvegcurry }) {
     const [quantity, setQuantity] = useState(1);
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
-    const navigate = useNavigate();
+  
 
     return (
         <div style={{ margin: "50px", height: "500px" }} className='shadow-lg p-3 mb-9 bg-white rounded'>
@@ -38,7 +38,7 @@ export default function Nonvegcurrys({ Nonvegcurry }) {
                     <Modal.Title>{Nonvegcurry.name}</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <img src={Nonvegcurry.image} className='img-fluid' style={{ height: "400px" }} />
+                    <img src={Nonvegcurry.image} className='img-fluid' alt="here" style={{ height: "400px" }} />
                     <p style={{ fontSize: "30px" }}>{Nonvegcurry.description}</p>
                 </Modal.Body>
                 <Modal.Footer>

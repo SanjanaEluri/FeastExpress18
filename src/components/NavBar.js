@@ -16,7 +16,7 @@ import Vegcurrys from '../Pages/vegcurryspage';
 import Nonvegcurrys from '../Pages/nonvegcurryspage'
 import Shakes from '../Pages/Shakespage'
 import Cakes from '../Pages/Cakespage'
-import config from '../config';
+
 
 import CustomerProfile from './CustomerProfile';
 export default function NavBar() {

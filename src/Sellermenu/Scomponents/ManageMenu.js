@@ -4,7 +4,7 @@ import { Link, Routes, Route } from 'react-router-dom';
 import Register from '../RegistrationMenu';
 import Viewmenu from '../Viewmenu';
 import './ManageMenu.css' // Import the CSS file
-import config from '../../config'
+
 export default function Managemenu() {
   return (
     <div className="managemenu-container">

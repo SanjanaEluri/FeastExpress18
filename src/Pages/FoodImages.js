@@ -3,11 +3,11 @@ import soups from './non-veg soups.jpg'
 import nonvegcurrys from './non-veg currys.jpg'
 import tiffins from './tiffins.jpg'
 import vegcurrys from './vegcurrys.jpg'
-import vegsoups from './vegsoups.jpg'
+
 import shakes from './shakes.avif'
 import cakes from './cakes.avif'
 import vegsoupss from './vegsoups2.jpg'
-import config from '../config';
+
 const foodImages = [
   {
     type:'Tiffins',

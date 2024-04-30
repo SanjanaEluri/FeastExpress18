@@ -1,14 +1,13 @@
 import React from 'react';
 import { Container, Row } from 'react-bootstrap';
-import { Link, useNavigate } from 'react-router-dom';
-import Homepage from './Pizzaspage';
-import Viewmenu from '../Sellermenu/Viewmenu';
+import {  useNavigate } from 'react-router-dom';
+
 import foodImages from './FoodImages';
 import './images.css';
 
 import transparentVideo from '../Images/pexels_videos_2832316 (1080p).mp4'; // Import your transparent video file
 import Viewmenud from './Viewmenud';
-import config from '../config';
+
 export default function MainPage() {
   const navigate = useNavigate();
 

@@ -1,5 +1,5 @@
 import chickenclearsoup from './Images/chickenclearsoup.jpg'
-import config from './config'
+
 const nonvegsoups=[
     {
         name: "Chicke Clear Soup.",

@@ -1,5 +1,5 @@
 import caramel from './Images/caramelmilkshake.jpg'
-import config from './config'
+
 const shakes=[
     {
         name: "Salted Caramel Milkshake Recipe",

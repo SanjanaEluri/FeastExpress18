@@ -7,7 +7,7 @@ import Managemenu from './ManageMenu';
 import Slogin from '../Sellerprofile/Slogin';
 import './SellerNavBar.css'
 import Registration from '../Sellerprofile/SRegistration';
-import config from '../../config'
+
 export default function SellersNavBar() {
   const navigate=useNavigate();
 

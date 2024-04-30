@@ -5,14 +5,14 @@ import { Routes, Route, Link } from 'react-router-dom';
 import Home from './Home';
 import About from './About';
 import Contact from './Contact'
-import PageNotFound from './PageNotFound'
+
 import CustomerLogin from './../components/Login';
 import CustomerSignIn from './../components/Signin'
 import SellerLogin from './../Sellermenu/Sellerprofile/Slogin';
 import SellerSignIn from './../Sellermenu/Sellerprofile/SRegistration'
 import AdminLogin from './../admin/AdminLogin';
 import './style.css';
-import config from '../config'
+
 // Change this line:
 // export default function MainNavBar({onAdminLogin,onCustomerLogin,onSellerLogin}){
 
@@ -30,7 +30,7 @@ export default function MainNavBar({onAdminLogin, onCustomerLogin, onSellerLogin
           <li className="nav-item"><Link to="/about" className="nav-link">About</Link></li>
           <li className="nav-item"><Link to="/customerregistration" className="nav-link">Customer Registration</Link></li>
           <li className="dropdown">
-            <Link className="nav-item"className="nav-link" >login</Link>
+            <Link  className="nav-link" >login</Link>
             <div className="dropdown-content" >
               <Link to="/customerlogin" className="nav-link">Customer Login</Link>
               <Link to="/sellerlogin" className="nav-link">Seller Login</Link>

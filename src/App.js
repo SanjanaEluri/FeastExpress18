@@ -2,11 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import MainNavBar from './main/MainNavBar';
 import AdminNavBar from './admin/AdminNavBar';
-import MainPage from './Pages/MainPage';
+
 import SellerNavBar from './Sellermenu/Scomponents/SellersNavBar';
 import NavBar from './components/NavBar'
-import { Nav } from 'react-bootstrap';
-import config from './config';
+
 export default function App() {
   const [isAdminLoggedIn, setIsAdminLoggedIn] = useState(false);
   const [isCustomerLoggedIn, setIsCustomerLoggedIn] = useState(false);

@@ -1,5 +1,5 @@
 import malabarfish from './Images/malabar fish.jpg'
-import config from './config'
+
 const nonvegcurrys=[
     {
         name: "malabar fish curry ",

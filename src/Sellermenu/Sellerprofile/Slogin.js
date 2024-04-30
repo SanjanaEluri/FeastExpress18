@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import '../Scomponents/SellersNavBar'
-import config from '../../config'
+
 
 export default function Slogin({onSellerLogin}) {
   const [formData, setFormData] = useState({

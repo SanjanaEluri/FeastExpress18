@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import config from '../config'
+
 
 export default function CustomerProfile() {
   const [jobseekerData, setJobSeekerData] = useState(null);

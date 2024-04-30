@@ -1,5 +1,5 @@
 import bisque from './Images/Bisque.jpg'
-import config from './config'
+
 const vegsoups=[
     {
         name: "Roasted Vegetable Bisque",

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+
 import '../Scomponents/SellerNavBar.css'
-import config from '../../config'
+
 
 function Sellerprofile() {
   const [sellerData, setSellerData] = useState({});

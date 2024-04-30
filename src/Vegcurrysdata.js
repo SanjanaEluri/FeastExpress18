@@ -1,5 +1,5 @@
 import tikkamasala from './Images/tikkamasala.jpg'
-import config from './config'
+
 const vegcurrys=[
     {
         name: "Tikka Masala",

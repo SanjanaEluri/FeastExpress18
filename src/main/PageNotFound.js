@@ -1,7 +1,7 @@
 import React from 'react';
 import NotFoundImage from './notfound.png';
 import './style.css'
-import config from '../config'
+
 export default function PageNotFound() {
   return (
     <div className="not-found-container">

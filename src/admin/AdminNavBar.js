@@ -5,7 +5,7 @@ import Viewsellers from './Viewsellers';
 import AdminHome from './AdminHome';
 import ViewMenu from './ViewMenu';
 import AdminLogin from './AdminLogin';
-import config from '../config'
+
 
 export default function AdminNavBar() {
 

@@ -1,7 +1,7 @@
 import hyderabadichicekbiryani from './Images/HyderabadiChickenBiryani.jpg'
 import vegitablebiryani from './Images/vegitableBiryani.jpg'
 import muttonbiryani from './Images/MuttonBiryani.jpg'
-import config from './config';
+
 const biryanis = [
     {
         name: "Hyderabadi Chicken Biryani",

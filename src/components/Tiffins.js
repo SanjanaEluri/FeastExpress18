@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
 import { Modal } from 'react-bootstrap';
-import config from '../config';
+
 export default function Tiffins({ Tiffin }) {
     const [quantity, setQuantity] = useState(1);
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
-    const [cart, setCart] = useState([]);
+   
 
     const addToCart = () => {
-        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        
 
         const newItem = {
             name: Tiffin.name,
@@ -19,8 +19,7 @@ export default function Tiffins({ Tiffin }) {
             price: Tiffin.prices && Tiffin.prices[Tiffin.variant] ? Tiffin.prices[Tiffin.variant] * quantity : 0,
         };
 
-        setCart((prevCart) => [...prevCart, newItem]);
-        localStorage.setItem('cart', JSON.stringify(cart));
+        
 
         // Update the cartItems state variable in the Cart component
         const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
@@ -58,7 +57,7 @@ export default function Tiffins({ Tiffin }) {
                     <Modal.Title>{Tiffin.name}</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <img src={Tiffin.image} className='img-fluid' style={{ height: "400px" }} />
+                    <img src={Tiffin.image} className='img-fluid' alt='here' style={{ height: "400px" }} />
                     <p style={{ fontSize: "30px" }}>{Tiffin.description}</p>
                 </Modal.Body>
                 <Modal.Footer>

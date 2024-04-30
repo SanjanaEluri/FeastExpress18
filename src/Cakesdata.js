@@ -2,7 +2,7 @@ import pinkbuttercake from './Images/pinkcake.jpg'
 import princescake from './Images/princes birthdaycake.jpg'
 import weddingcake from './Images/weddingcake.jpg'
 import egglesscake from './Images/egglesschococake.jpg'
-import config from './config';
+
 const cakes=[
     {
         name: "Birthday Pink Butter Incing Cake",

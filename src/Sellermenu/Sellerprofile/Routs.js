@@ -5,7 +5,7 @@ import { Route, Routes } from 'react-router-dom';
 import NavBar from '../components/NavBar';
 import Slogin from '../components/Slogin';
 import Sellerprofile from './Sellerprofile';
-import config from '../../config'
+
 const AppRoutes = () => (
   <Routes>
     <Route path="/navbar" element={<NavBar />} />

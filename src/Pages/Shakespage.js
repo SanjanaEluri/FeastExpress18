@@ -2,7 +2,7 @@ import React from 'react';
 import { Navbar } from 'react-bootstrap';
 import shakes from '../Shakesdata'
 import Shakes from '../components/Shakes'
-import config from '../config';
+
 export default function Shakespage() {
     return (
         <div>

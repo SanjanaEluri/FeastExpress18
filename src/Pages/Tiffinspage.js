@@ -3,7 +3,7 @@ import '../components/NavBar'
 import { Navbar } from 'react-bootstrap';
 import tiffins from '../tiffinsdata'
 import Tiffins from '../components/Tiffins'
-import config from '../config';
+
 export default function Tiffinspage() {
     return (
         <div>

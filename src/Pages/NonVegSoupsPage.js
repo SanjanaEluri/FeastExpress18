@@ -2,7 +2,7 @@ import React from 'react';
 import { Navbar } from 'react-bootstrap';
 import Nonvegsoups from '../components/NonVegSoups';
 import nonvegsoups from '../NonVegSoupsdata';
-import config from '../config';
+
 export default function NonVegSoupsPage() {
     return (
         <div>

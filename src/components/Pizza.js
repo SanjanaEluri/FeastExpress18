@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Modal } from 'react-bootstrap'; // Add this import
-import config from '../config';
+
 export default function Pizza({ pizza }) {
     const [quantity, setQuantity] = useState(1);
     const [varient, setVarient] = useState('small');
@@ -44,7 +44,7 @@ export default function Pizza({ pizza }) {
                                 <Modal.Title>{pizza.name}</Modal.Title>
                             </Modal.Header>
                             <Modal.Body>
-                                <img src={pizza.image} className='img-fluid' style={{height:"400px"}}/>
+                                <img src={pizza.image} className='img-fluid' alt='here' style={{height:"400px"}}/>
                                 <p style={{fontSize:"30px"}}>{pizza.description}</p>
                             </Modal.Body>
                             <Modal.Footer>

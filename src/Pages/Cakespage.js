@@ -2,7 +2,7 @@ import React from 'react';
 import { Navbar } from 'react-bootstrap';
 import cakes from '../Cakesdata'
 import Cakes from '../components/Cakes'
-import config from '../config';
+
 
 export default function Cakespage() {
     return (

@@ -4,10 +4,7 @@ import pizzas from '../pizzasdata';
 
 import '../components/NavBar'
 import { Navbar } from 'react-bootstrap';
-import Cart from '../components/Cart';
-import Login from '../components/Login';
-import Biryanis from '../components/Biryanis';
-import config from '../config';
+
 export default function Homepage() {
     return (
         <div>

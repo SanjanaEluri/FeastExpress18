@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import config from '../config'
+
 
 export default function ViewMenu() {
   const [jobseekers, setJobSeekers] = useState([]);

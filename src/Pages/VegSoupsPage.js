@@ -2,7 +2,7 @@ import React from 'react';
 import { Navbar } from 'react-bootstrap';
 import vegsoups from '../Vegsoupsdata'
 import Vegsoups from '../components/Vegsoups'
-import config from '../config';
+
 
 export default function VegSoupsPage() {
     return (

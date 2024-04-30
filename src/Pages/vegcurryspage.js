@@ -2,7 +2,7 @@ import React from 'react';
 import { Navbar } from 'react-bootstrap';
 import vegcurrys from '../Vegcurrysdata';
 import Vegcurrys from '../components/Vegcurrys';
-import config from '../config';
+
 export default function vegcurrysPage() {
     return (
         <div>

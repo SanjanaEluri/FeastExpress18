@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Modal } from 'react-bootstrap';
-import { Link, useNavigate } from 'react-router-dom';
-import config from '../config'
+import {  useNavigate } from 'react-router-dom';
+
 export default function Biryanis({ Biryani }) {
     const [quantity, setQuantity] = useState(1);
     const [varient, setVarient] = useState('small');
@@ -60,7 +60,7 @@ export default function Biryanis({ Biryani }) {
                     <Modal.Title>{Biryani.name}</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <img src={Biryani.image} className='img-fluid' style={{ height: "400px" }} />
+                    <img src={Biryani.image} className='img-fluid' alt="here" style={{ height: "400px" }} />
                     <p style={{ fontSize: "30px" }}>{Biryani.description}</p>
                 </Modal.Body>
                 <Modal.Footer>

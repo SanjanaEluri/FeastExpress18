@@ -6,9 +6,6 @@ import biryanis from '../Biryanisdata';
 import Biryanis from '../components/Biryanis';
 import '../components/NavBar'
 
-import Cart from '../components/Cart';
-import Login from '../components/Login';
-import config from '../config';
 export default function BiryanisPage() {
     return (
         <div>

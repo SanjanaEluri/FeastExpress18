@@ -1,7 +1,7 @@
 // Ordereditems.js
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import config from '../config';
+
 export default function Ordereditems() {
   const [sellerData, setSellerData] = useState("");
   const [orderedItems, setOrderedItems] = useState([]);
