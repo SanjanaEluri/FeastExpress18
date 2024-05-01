@@ -28,14 +28,25 @@ export default function MainNavBar({onAdminLogin, onCustomerLogin, onSellerLogin
         
           <li  className="nav-item"><Link to="/"  className="nav-link">Home</Link></li>
           <li className="nav-item"><Link to="/about" className="nav-link">About</Link></li>
-          <li className="nav-item"><Link to="/customerregistration" className="nav-link">Customer Registration</Link></li>
+          
           <li className="dropdown">
             <Link  className="nav-link" >login</Link>
             <div className="dropdown-content" >
               <Link to="/customerlogin" className="nav-link">Customer Login</Link>
               <Link to="/sellerlogin" className="nav-link">Seller Login</Link>
               <Link to="/adminlogin" className="nav-link">Admin Login</Link>
+              
             </div>
+            
+          </li>
+          <li className="dropdown">
+            <Link  className="nav-link" >Registration</Link>
+            <div className="dropdown-content" >
+            <Link to="/customerregistration" className="nav-link">Customer Registration</Link>
+          <Link to="/sellerregistration"  className="nav-link">Seller Registration</Link>
+              
+            </div>
+            
           </li>
           <li className="nav-item"><Link to="/contact" className="nav-link">Contact</Link></li>
         </ul>
