@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-import config from '../config'
+import config from '../config';
+
 export default function Viewmenud() {
   const [jobseekers, setJobSeekers] = useState([]);
+  const [hoveredIndex, setHoveredIndex] = useState(null);
   const navigate = useNavigate();
 
   const fetchJobSeekers = async () => {
@@ -40,12 +42,12 @@ export default function Viewmenud() {
   return (
     <div>
       <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
-        {jobseekers.map((jobseeker, index) => (
+        {Array.isArray(jobseekers) && jobseekers.map((jobseeker, index) => (
           <div
             key={index}
-            style={{ ...cardStyle, ...(jobseeker.isHovered ? hoverStyle : {}) }}
-            onMouseEnter={() => setJobSeekers(prevState => prevState.map((item, i) => (i === index ? { ...item, isHovered: true } : item)))}
-            onMouseLeave={() => setJobSeekers(prevState => prevState.map((item, i) => (i === index ? { ...item, isHovered: false } : item)))}
+            style={{ ...cardStyle, ...(index === hoveredIndex ? hoverStyle : {}) }}
+            onMouseEnter={() => setHoveredIndex(index)}
+            onMouseLeave={() => setHoveredIndex(null)}
           >
             {jobseeker.image && (
               <img
@@ -59,10 +61,9 @@ export default function Viewmenud() {
               <p>Price: Rs:{jobseeker.price}/-</p>
               <p>Varient: {jobseeker.varient}</p>
               <p>Quantity: {jobseeker.quantity}</p>
-              
             </div>
             <div className='m-1 w-50'>
-              <button className='btn' style={{width:"100%"}} onClick={handlecart}>ADD TO CART</button>
+              <button className='btn' style={{ width: "100%" }} onClick={handlecart}>ADD TO CART</button>
             </div>
           </div>
         ))}

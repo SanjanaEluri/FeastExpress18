@@ -2,7 +2,10 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import config from './Sellerprofile/configure'
 export default function Viewmenu() {
+  
   const [jobseekers, setJobSeekers] = useState([]);
+
+
 
   const fetchJobSeekers = async () => {
     try {
