@@ -116,13 +116,13 @@ export default function Registration() {
           <label>category</label>&nbsp;&nbsp;
           <select id="category" value={formData.category} onChange={handleChange} required>
             <option value="">Select Category</option>
-            {/* <option value="Tiffins">Tiffins</option>
+             <option value="Tiffins">Tiffins</option>
             <option value="biryani">biryani</option>
             <option value="pizzas">Pizzas</option>
             <option value="Non-veg Soups">Non-veg Soups</option>
             <option value="Veg Soups">Veg Soups</option>
             <option value="Veg Currys">Veg Currys</option>
-            <option value="Non-Veg Currys">Non-Veg Currys</option> */}
+            <option value="Non-Veg Currys">Non-Veg Currys</option> 
             <option value="Shakes">Shakes</option>
             <option value="Cakes">Cakes</option>
           </select>
